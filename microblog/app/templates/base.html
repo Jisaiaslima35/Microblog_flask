@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .maim {
+        background-color: darkgreen;
+        color: aliceblue;
+        font-weight: bold;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .maim nav a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    footer {
+        padding: 25px;
+        background-color: darkgreen;
+        color: aliceblue;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-container {
+        padding: 20px;
+        /* Adicione margem para separar o conteúdo do cabeçalho e do footer */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microblog</title>
+</head>
+<body>
+<div class="maim">
+    <img src="https://gifs.eco.br/wp-content/uploads/2022/11/gifs-de-programador-34.gif" width="100px" height="100px" alt="">
+    <h1>Microblog</h1>
+    <nav>
+        <a href="/index">Home</a> |
+        <a href="/sobre">Sobre</a>
+    </nav>
+    <hr>
+</div>
+
+<div class="content-container">
+    {% block conteudo %}
+    {% endblock %}
+</div>
+
+<footer>
+    Todos Os Direitos Reservados @j.isaias_Lima
+</footer>
+</body>
+</html>

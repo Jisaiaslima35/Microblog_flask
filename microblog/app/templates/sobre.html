@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container{
+        width: 70%; 
+        display: block;
+        box-sizing: border-box;
+        overflow: hidden;
+        word-wrap: break-word;
+        margin: 10px auto; 
+        }
+        .container img{
+            float: right;
+        }
+</style>
+<section>
+    <div class="container">
+        <h3>Quem sou eu?</h3>
+    
+    <p>
+        De onde isso vem?
+    Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Tem raízes em uma peça da literatura latina clássica de 45 aC, com mais de 2.000 anos. Richard McClintock, professor de latim no Hampden-Sydney College, na Virgínia, procurou uma das palavras latinas mais obscuras, consectetur, em uma passagem de Lorem Ipsum, e examinando as citações da palavra na literatura clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 AC. Este livro é um tratado sobre a teoria da ética, muito popular durante o Renascimento. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..", vem de uma linha na seção 1.10.32
+    </p>
+    
+    <img src="https://thumbs.dreamstime.com/b/sunset-over-taggart-lake-grand-teton-mountains-wyoming-usa-stunning-alpine-national-park-surrounded-majestic-long-291484702.jpg" width="300px" height="300px" alt="">
+    
+    </div>
+</section>
+{% endblock %}

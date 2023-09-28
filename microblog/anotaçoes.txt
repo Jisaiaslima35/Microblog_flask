@@ -1,0 +1,12 @@
+1 - python -m venv venv
+2 - ativa a venv
+3 - instalar variaveis de anbiente em tempo de execuçao
+4 - pip install python-dotenv
+5 - criar um arquivo chamado .flaskenv
+6 - dentro desse arquivo vai esses codigos:
+FLASK_APP=microblog.py
+FLASK_ENV=development  
+
+que indicar o arquivo padrao;
+e outro atualizar em tempo real as modificaçoes
+7 - rodar o codigo => flask run
